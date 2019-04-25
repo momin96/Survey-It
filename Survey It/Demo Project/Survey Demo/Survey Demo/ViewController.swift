@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Survey_It
+//import Survey_It
 
 class ViewController: UIViewController {
 
@@ -20,9 +20,9 @@ class ViewController: UIViewController {
 
     @IBAction func launch(_ sender: UIButton) {
         
-        let config = SurveyConfig()
-        let svc = SurveyViewController.create()
-        self.navigationController?.pushViewController(svc, animated: true)
+        //let config = SurveyConfig()
+        //let svc = SurveyViewController.create()
+        //self.navigationController?.pushViewController(svc, animated: true)
         
     }
     

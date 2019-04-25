@@ -12,7 +12,6 @@
 		0E16FAC0227207C6004C828E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E16FABE227207C6004C828E /* Main.storyboard */; };
 		0E16FAC2227207C9004C828E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E16FAC1227207C9004C828E /* Assets.xcassets */; };
 		0E16FAC5227207C9004C828E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E16FAC3227207C9004C828E /* LaunchScreen.storyboard */; };
-		0E16FAD7227208C6004C828E /* Survey_It.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E16FAD5227208C6004C828E /* Survey_It.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +33,6 @@
 		0E16FAC4227207C9004C828E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E16FAC6227207C9004C828E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E16FACC2272083A004C828E /* Survey It.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Survey It.xcodeproj"; path = "../../Survey It.xcodeproj"; sourceTree = "<group>"; };
-		0E16FAD5227208C6004C828E /* Survey_It.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Survey_It.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +40,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E16FAD7227208C6004C828E /* Survey_It.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +49,6 @@
 		0E16FAAE227207C6004C828E = {
 			isa = PBXGroup;
 			children = (
-				0E16FAD5227208C6004C828E /* Survey_It.framework */,
 				0E16FACC2272083A004C828E /* Survey It.xcodeproj */,
 				0E16FAB9227207C6004C828E /* Survey Demo */,
 				0E16FAB8227207C6004C828E /* Products */,
@@ -329,6 +325,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Survey Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,6 +348,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Survey Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
