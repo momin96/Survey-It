@@ -12,7 +12,18 @@
 		0E16FAC0227207C6004C828E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E16FABE227207C6004C828E /* Main.storyboard */; };
 		0E16FAC2227207C9004C828E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E16FAC1227207C9004C828E /* Assets.xcassets */; };
 		0E16FAC5227207C9004C828E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E16FAC3227207C9004C828E /* LaunchScreen.storyboard */; };
+		0E16FAD7227208C6004C828E /* Survey_It.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E16FAD5227208C6004C828E /* Survey_It.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E16FAD02272083A004C828E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E16FACC2272083A004C828E /* Survey It.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E16FA9D2271FF15004C828E;
+			remoteInfo = "Survey It";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0E16FAB7227207C6004C828E /* Survey Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Survey Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +33,8 @@
 		0E16FAC1227207C9004C828E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E16FAC4227207C9004C828E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E16FAC6227207C9004C828E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E16FACC2272083A004C828E /* Survey It.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Survey It.xcodeproj"; path = "../../Survey It.xcodeproj"; sourceTree = "<group>"; };
+		0E16FAD5227208C6004C828E /* Survey_It.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Survey_It.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E16FAD7227208C6004C828E /* Survey_It.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +52,8 @@
 		0E16FAAE227207C6004C828E = {
 			isa = PBXGroup;
 			children = (
+				0E16FAD5227208C6004C828E /* Survey_It.framework */,
+				0E16FACC2272083A004C828E /* Survey It.xcodeproj */,
 				0E16FAB9227207C6004C828E /* Survey Demo */,
 				0E16FAB8227207C6004C828E /* Products */,
 			);
@@ -62,6 +78,14 @@
 				0E16FAC6227207C9004C828E /* Info.plist */,
 			);
 			path = "Survey Demo";
+			sourceTree = "<group>";
+		};
+		0E16FACD2272083A004C828E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E16FAD12272083A004C828E /* Survey_It.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,12 +134,28 @@
 			mainGroup = 0E16FAAE227207C6004C828E;
 			productRefGroup = 0E16FAB8227207C6004C828E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0E16FACD2272083A004C828E /* Products */;
+					ProjectRef = 0E16FACC2272083A004C828E /* Survey It.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0E16FAB6227207C6004C828E /* Survey Demo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0E16FAD12272083A004C828E /* Survey_It.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Survey_It.framework;
+			remoteRef = 0E16FAD02272083A004C828E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0E16FAB5227207C6004C828E /* Resources */ = {
@@ -284,6 +324,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43L66PNJ7D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Survey Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +346,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43L66PNJ7D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Survey Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

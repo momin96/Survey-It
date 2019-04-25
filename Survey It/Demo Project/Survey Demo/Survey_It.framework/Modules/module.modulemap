@@ -1,0 +1,11 @@
+framework module Survey_It {
+  umbrella header "Survey_It.h"
+
+  export *
+  module * { export * }
+}
+
+module Survey_It.Swift {
+    header "Survey_It-Swift.h"
+    requires objc
+}

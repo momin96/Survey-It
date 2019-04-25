@@ -7,14 +7,24 @@
 //
 
 import UIKit
+import Survey_It
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
-
+    @IBAction func launch(_ sender: UIButton) {
+        
+        let config = SurveyConfig()
+        let svc = SurveyViewController.create()
+        self.navigationController?.pushViewController(svc, animated: true)
+        
+    }
+    
 }
 

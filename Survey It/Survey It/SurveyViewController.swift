@@ -10,9 +10,15 @@ import UIKit
 
 public class SurveyViewController: UIViewController {
 
-    internal override func viewDidLoad() {
+    
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
+    public class func create() -> SurveyViewController {
+        
+        let vc = UIStoryboard(name: "Survey", bundle: nil).instantiateViewController(withIdentifier: "SurveyViewController") as! SurveyViewController
+        return vc
+    }
 }
