@@ -13,6 +13,8 @@
 		0E16FAC2227207C9004C828E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E16FAC1227207C9004C828E /* Assets.xcassets */; };
 		0E16FAC5227207C9004C828E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E16FAC3227207C9004C828E /* LaunchScreen.storyboard */; };
 		0E16FADF22720CF2004C828E /* Survey_It.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E16FADD22720CF2004C828E /* Survey_It.framework */; };
+		0E238CC12272DD0A0041C670 /* Survey_It.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E16FAD12272083A004C828E /* Survey_It.framework */; };
+		0E238CC22272DD0A0041C670 /* Survey_It.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E16FAD12272083A004C828E /* Survey_It.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +25,28 @@
 			remoteGlobalIDString = 0E16FA9D2271FF15004C828E;
 			remoteInfo = "Survey It";
 		};
+		0E238CC32272DD0A0041C670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E16FACC2272083A004C828E /* Survey It.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E16FA9C2271FF15004C828E;
+			remoteInfo = "Survey It";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E238CC52272DD0A0041C670 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0E238CC22272DD0A0041C670 /* Survey_It.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0E16FAB7227207C6004C828E /* Survey Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Survey Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E16FADF22720CF2004C828E /* Survey_It.framework in Frameworks */,
+				0E238CC12272DD0A0041C670 /* Survey_It.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,10 +122,12 @@
 				0E16FAB3227207C6004C828E /* Sources */,
 				0E16FAB4227207C6004C828E /* Frameworks */,
 				0E16FAB5227207C6004C828E /* Resources */,
+				0E238CC52272DD0A0041C670 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0E238CC42272DD0A0041C670 /* PBXTargetDependency */,
 			);
 			name = "Survey Demo";
 			productName = "Survey Demo";
@@ -181,6 +207,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E238CC42272DD0A0041C670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Survey It";
+			targetProxy = 0E238CC32272DD0A0041C670 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0E16FABE227207C6004C828E /* Main.storyboard */ = {
@@ -321,6 +355,7 @@
 		0E16FACA227207C9004C828E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43L66PNJ7D;
@@ -344,6 +379,7 @@
 		0E16FACB227207C9004C828E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43L66PNJ7D;
