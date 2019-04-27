@@ -18,7 +18,9 @@ public class SurveyViewController: UIViewController {
     
     public class func create() -> SurveyViewController {
         
-        let vc = UIStoryboard(name: "Survey", bundle: nil).instantiateViewController(withIdentifier: "SurveyViewController") as! SurveyViewController
+        let bundle = Bundle(for: SurveyViewController.self)
+        
+        let vc = UIStoryboard(name: "Survey", bundle: bundle).instantiateViewController(withIdentifier: "SurveyViewController") as! SurveyViewController
         return vc
     }
 }
