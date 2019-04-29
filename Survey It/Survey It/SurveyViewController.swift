@@ -10,10 +10,17 @@ import UIKit
 
 public class SurveyViewController: UIViewController {
 
+    public var surveryConfig: SurveyConfig? {
+        didSet {
+            print("surveryConfig")
+        }
+    }
     
     public override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(surveryConfig)
+        
     }
     
     public class func create() -> SurveyViewController {
