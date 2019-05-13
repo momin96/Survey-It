@@ -10,9 +10,11 @@ import UIKit
 
 public class SurveyViewController: UIViewController {
 
+    @IBOutlet weak var containerView: UIView!
+    
     public var surveryConfig: SurveyConfig? {
         didSet {
-            print("surveryConfig")
+            //print("surveryConfig")
         }
     }
     
