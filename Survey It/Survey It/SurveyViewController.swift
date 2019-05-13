@@ -19,6 +19,11 @@ public class SurveyViewController: UIViewController {
     public var surveryConfig: SurveyConfig?
     
     // MARK:- Overriadable functions
+    
+    deinit {
+        print("deinit SurveyViewController")
+    }
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
         
