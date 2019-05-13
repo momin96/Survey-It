@@ -11,6 +11,8 @@
 		0E16FAA92271FF3B004C828E /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E16FAA82271FF3B004C828E /* Survey.storyboard */; };
 		0E16FAAB227206C9004C828E /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E16FAAA227206C9004C828E /* SurveyViewController.swift */; };
 		0E16FAAD22720743004C828E /* SurveyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E16FAAC22720743004C828E /* SurveyConfig.swift */; };
+		0EAEF65122897CA0007CD927 /* QuestionAnswerTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EAEF65022897CA0007CD927 /* QuestionAnswerTableView.xib */; };
+		0EAEF65322897CD1007CD927 /* QuestionAnswerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAEF65222897CD1007CD927 /* QuestionAnswerTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		0E16FAA82271FF3B004C828E /* Survey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
 		0E16FAAA227206C9004C828E /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		0E16FAAC22720743004C828E /* SurveyConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyConfig.swift; sourceTree = "<group>"; };
+		0EAEF65022897CA0007CD927 /* QuestionAnswerTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionAnswerTableView.xib; sourceTree = "<group>"; };
+		0EAEF65222897CD1007CD927 /* QuestionAnswerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 				0E16FAAA227206C9004C828E /* SurveyViewController.swift */,
 				0E16FAAC22720743004C828E /* SurveyConfig.swift */,
 				0E16FAA82271FF3B004C828E /* Survey.storyboard */,
+				0EAEF65022897CA0007CD927 /* QuestionAnswerTableView.xib */,
+				0EAEF65222897CD1007CD927 /* QuestionAnswerTableView.swift */,
 				0E16FAA12271FF15004C828E /* Info.plist */,
 			);
 			path = "Survey It";
@@ -131,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E16FAA92271FF3B004C828E /* Survey.storyboard in Resources */,
+				0EAEF65122897CA0007CD927 /* QuestionAnswerTableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E16FAAB227206C9004C828E /* SurveyViewController.swift in Sources */,
+				0EAEF65322897CD1007CD927 /* QuestionAnswerTableView.swift in Sources */,
 				0E16FAAD22720743004C828E /* SurveyConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
