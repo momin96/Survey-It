@@ -10,6 +10,30 @@ import Foundation
 
 class QuestionAnswerTableView: UITableView {
     
+    internal var questionAnswer: QuestionAnswers?
     
+    override init(frame: CGRect, style: UITableView.Style) {
+        super.init(frame: frame, style: style)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        //fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        print(#function)
+        
+    }
+    
+    class func create() -> QuestionAnswerTableView {
+    
+        let bundle = Bundle(for: QuestionAnswerTableView.self)
+        let list = UINib(nibName: "QuestionAnswerTableView", bundle: bundle).instantiate(withOwner: nil, options: nil)
+        print(list)
+        
+        return list.first as! QuestionAnswerTableView
+    }
     
 }

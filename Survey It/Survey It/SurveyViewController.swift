@@ -10,21 +10,23 @@ import UIKit
 
 public class SurveyViewController: UIViewController {
 
+    // MARK: Internal variables
     @IBOutlet weak var containerView: UIView!
     
-    public var surveryConfig: SurveyConfig? {
-        didSet {
-            //print("surveryConfig")
-        }
-    }
+    internal var questionCounter = 0
     
+    // MARK: Public variables & properties
+    public var surveryConfig: SurveyConfig?
+    
+    // MARK: Overriadable functions
     public override func viewDidLoad() {
         super.viewDidLoad()
-
-        print(surveryConfig)
         
+        initialSetup()
+      
     }
     
+    // MARK: Public functions
     public class func create() -> SurveyViewController {
         
         let bundle = Bundle(for: SurveyViewController.self)
@@ -32,4 +34,19 @@ public class SurveyViewController: UIViewController {
         let vc = UIStoryboard(name: "Survey", bundle: bundle).instantiateViewController(withIdentifier: "SurveyViewController") as! SurveyViewController
         return vc
     }
+    
+    
+    
+    //MARK: Private functions
+    private func initialSetup() {
+        guard let config = surveryConfig else { return }
+        let questionAnswer = config.questionAnswers?.first
+        
+        let qaTableView = QuestionAnswerTableView.create()
+        qaTableView.questionAnswer = questionAnswer
+        
+        
+        containerView.addSubview(qaTableView)
+    }
+    
 }
