@@ -13,15 +13,27 @@ internal let answerCellId = "AnswerCellId"
 
 
 class QuestionCell: UITableViewCell {
+    
+    deinit {
+        print("deinit QuestionCell")
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        print("awakeFromNib QuestionCell")
     }
     
 }
 
 class AnswerCell: UITableViewCell {
+    
+    deinit {
+        print("deinit AnswerCell")
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        print("awakeFromNib AnswerCell")
     }
     
 }
