@@ -13,6 +13,8 @@
 		0E16FAAD22720743004C828E /* SurveyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E16FAAC22720743004C828E /* SurveyConfig.swift */; };
 		0EAEF65122897CA0007CD927 /* QuestionAnswerTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EAEF65022897CA0007CD927 /* QuestionAnswerTableView.xib */; };
 		0EAEF65322897CD1007CD927 /* QuestionAnswerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAEF65222897CD1007CD927 /* QuestionAnswerTableView.swift */; };
+		0EAEF655228987A6007CD927 /* QuestionAnswerCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAEF654228987A6007CD927 /* QuestionAnswerCells.swift */; };
+		0EAEF6572289883A007CD927 /* QuestionAnswerCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EAEF6562289883A007CD927 /* QuestionAnswerCells.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0E16FAAC22720743004C828E /* SurveyConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyConfig.swift; sourceTree = "<group>"; };
 		0EAEF65022897CA0007CD927 /* QuestionAnswerTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionAnswerTableView.xib; sourceTree = "<group>"; };
 		0EAEF65222897CD1007CD927 /* QuestionAnswerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerTableView.swift; sourceTree = "<group>"; };
+		0EAEF654228987A6007CD927 /* QuestionAnswerCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerCells.swift; sourceTree = "<group>"; };
+		0EAEF6562289883A007CD927 /* QuestionAnswerCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionAnswerCells.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				0E16FAA82271FF3B004C828E /* Survey.storyboard */,
 				0EAEF65022897CA0007CD927 /* QuestionAnswerTableView.xib */,
 				0EAEF65222897CD1007CD927 /* QuestionAnswerTableView.swift */,
+				0EAEF6562289883A007CD927 /* QuestionAnswerCells.xib */,
+				0EAEF654228987A6007CD927 /* QuestionAnswerCells.swift */,
 				0E16FAA12271FF15004C828E /* Info.plist */,
 			);
 			path = "Survey It";
@@ -136,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EAEF6572289883A007CD927 /* QuestionAnswerCells.xib in Resources */,
 				0E16FAA92271FF3B004C828E /* Survey.storyboard in Resources */,
 				0EAEF65122897CA0007CD927 /* QuestionAnswerTableView.xib in Resources */,
 			);
@@ -151,6 +158,7 @@
 				0E16FAAB227206C9004C828E /* SurveyViewController.swift in Sources */,
 				0EAEF65322897CD1007CD927 /* QuestionAnswerTableView.swift in Sources */,
 				0E16FAAD22720743004C828E /* SurveyConfig.swift in Sources */,
+				0EAEF655228987A6007CD927 /* QuestionAnswerCells.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,5 +35,18 @@ class QuestionAnswerTableView: UITableView {
         
         return list.first as! QuestionAnswerTableView
     }
+}
+
+extension QuestionAnswerTableView: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guar
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
     
 }
+
+

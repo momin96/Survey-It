@@ -18,7 +18,7 @@ public class SurveyViewController: UIViewController {
     // MARK: Public variables & properties
     public var surveryConfig: SurveyConfig?
     
-    // MARK: Overriadable functions
+    // MARK:- Overriadable functions
     public override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +26,7 @@ public class SurveyViewController: UIViewController {
       
     }
     
-    // MARK: Public functions
+    // MARK:- Public functions
     public class func create() -> SurveyViewController {
         
         let bundle = Bundle(for: SurveyViewController.self)
@@ -37,7 +37,8 @@ public class SurveyViewController: UIViewController {
     
     
     
-    //MARK: Private functions
+    //MARK:- Private functions
+    
     private func initialSetup() {
         guard let config = surveryConfig else { return }
         let questionAnswer = config.questionAnswers?.first
