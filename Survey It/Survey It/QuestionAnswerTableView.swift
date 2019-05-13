@@ -12,12 +12,17 @@ class QuestionAnswerTableView: UITableView {
     
     internal var questionAnswer: QuestionAnswers?
     
-    internal var qaNib: UINib {
+    internal var qNib: UINib {
         let bundle = Bundle(for: QuestionAnswerTableView.self)
-        return UINib(nibName: "QuestionAnswerCells", bundle: bundle)
+        return UINib(nibName: "QuestionCell", bundle: bundle)
     }
     
+    internal var aNib: UINib {
+        let bundle = Bundle(for: QuestionAnswerTableView.self)
+        return UINib(nibName: "AnswerCell", bundle: bundle)
+    }
     
+    // MARK:- Overridable functions
     deinit {
         print("deinit QuestionAnswerTableView")
     }
@@ -33,13 +38,14 @@ class QuestionAnswerTableView: UITableView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
-        register(qaNib, forCellReuseIdentifier: questionCellId)
-        register(qaNib, forCellReuseIdentifier: answerCellId)
+        
+        register(qNib, forCellReuseIdentifier: questionCellId)
+        register(aNib, forCellReuseIdentifier: answerCellId)
         
         dataSource = self
     }
     
+    // MARK:- Public functions
     class func create() -> QuestionAnswerTableView {
     
         let bundle = Bundle(for: QuestionAnswerTableView.self)
@@ -64,47 +70,45 @@ extension QuestionAnswerTableView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row % 2 == 0 {
-            return getQuestionCell()
+            return getQuestionCell(tableView)
         }
-        return getAnwerCell()
+        return getAnwerCell(tableView)
     }
     
-    private func getQuestionCell () -> QuestionCell{
+    private func getQuestionCell (_ tableView: UITableView) -> QuestionCell{
         
-        let list = qaNib.instantiate(withOwner: nil, options: nil)
+//        let list = qNib.instantiate(withOwner: nil, options: nil)
+//
+//        var cell: QuestionCell? = nil
+//
+//        for thisClass in list {
+//            if thisClass is QuestionCell {
+//                cell = thisClass as? QuestionCell
+//                break
+//            }
+//        }
+//
+//        return cell!
         
-        var cell: QuestionCell? = nil
-        
-        for thisClass in list {
-            if thisClass is QuestionCell {
-                cell = thisClass as? QuestionCell
-                break
-            }
-        }
-        
-        return cell!
-        
-        //return tableView.dequeueReusableCell(withIdentifier: questionCellId) as! QuestionCell
+        return tableView.dequeueReusableCell(withIdentifier: questionCellId) as! QuestionCell
     }
     
-    private func getAnwerCell () -> AnswerCell{
+    private func getAnwerCell (_ tableView: UITableView) -> AnswerCell{
         
-        let list = qaNib.instantiate(withOwner: nil, options: nil)
+//        let list = aNib.instantiate(withOwner: nil, options: nil)
+//
+//        var cell: AnswerCell? = nil
+//
+//        for thisClass in list {
+//            if thisClass is AnswerCell {
+//                cell = thisClass as? AnswerCell
+//                break
+//            }
+//        }
+//        return cell!
         
-        var cell: AnswerCell? = nil
-        
-        for thisClass in list {
-            if thisClass is AnswerCell {
-                cell = thisClass as? AnswerCell
-                break
-            }
-        }
-        return cell!
-        
-//        return tableView.dequeueReusableCell(withIdentifier: answerCellId) as! AnswerCell
+        return tableView.dequeueReusableCell(withIdentifier: answerCellId) as! AnswerCell
     }
-    
-    
 }
 
 
