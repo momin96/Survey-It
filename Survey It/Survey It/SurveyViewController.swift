@@ -45,14 +45,14 @@ public class SurveyViewController: UIViewController {
     //MARK:- Private functions
     
     private func initialSetup() {
-        guard let config = surveryConfig else { return }
-        let questionAnswer = config.questionAnswers?.first
-        
-        let qaTableView = QuestionAnswerTableView.create()
-        qaTableView.questionAnswer = questionAnswer
-        
-        
-        containerView.addSubview(qaTableView)
+//        guard let config = surveryConfig else { return }
+//        let questionAnswer = config.questionAnswers?.first
+//        
+//        let qaTableView = QuestionAnswerTableView.create()
+//        qaTableView.questionAnswer = questionAnswer
+//        
+//        
+//        containerView.addSubview(qaTableView)
     }
     
 }
