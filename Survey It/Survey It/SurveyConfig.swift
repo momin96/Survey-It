@@ -12,7 +12,7 @@ public class SurveyConfig {
     
     var questionAnswers: [QuestionAnswers]?
     
-    public init(qa list: [QuestionAnswers]) {
+    public init(_ list: [QuestionAnswers]) {
         self.questionAnswers = list
     }
 }
