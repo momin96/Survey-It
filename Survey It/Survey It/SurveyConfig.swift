@@ -67,4 +67,12 @@ public struct Answer {
         
         return false
     }
+    
+    public func getScore() -> Int? {
+        guard let flag = isCorrect else { return nil }
+        if flag == true {
+            return 100
+        }
+        return 0
+    }
 }

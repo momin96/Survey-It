@@ -15,39 +15,45 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
     }
 
     @IBAction func launch(_ sender: UIButton) {
         
-        let q1 = "What is this "
-        let a1 = ["A", "B", "C"]
-        let i1 = 1
-        
-        let q2 = "Who is this "
-        let a2 = ["X", "Y", "Z"]
-        let i2 = 0
-        
-        let q3 = "when is this "
-        let a3 = ["s", "d", "f"]
-        let i3 = 2
-        
-        let q4 = "How is this "
-        let a4 = ["q", "w", "e"]
-        let i4 = 1
-        
-        let qa1 = QuestionAnswers(question: q1, answers: a1, correctAnswerIndex: i1)
-        let qa2 = QuestionAnswers(question: q2, answers: a2, correctAnswerIndex: i2)
-        let qa3 = QuestionAnswers(question: q3, answers: a3, correctAnswerIndex: i3)
-        let qa4 = QuestionAnswers(question: q4, answers: a4, correctAnswerIndex: i4)
-
-        let config = SurveyConfig.init(qa: [qa1, qa2, qa3, qa4])
-        
+        let config = createSurveyConfig()
+  
         let svc = SurveyViewController.create()
         svc.surveryConfig = config
         
         self.navigationController?.pushViewController(svc, animated: true)
     }
+
     
+    func createSurveyConfig() -> SurveyConfig {
+        
+        var q1 = Question(question: "This is question 1 ?")
+        var a1 = Answer(options: ["a1", "b1", "c1", "d1", "e1"], correctAnswer: "e1")
+        var qa1 = QuestionAnswers(question: q1, answers: a1)
+        
+        var q2 = Question(question: "This is question 2 ?")
+        var a2 = Answer(options: ["a2", "b2", "c2", "d2", "e2"], correctAnswer: "a2")
+        var qa2 = QuestionAnswers(question: q2, answers: a2)
+        
+        var q3 = Question(question: "This is question 3 ?")
+        var a3 = Answer(options: ["a3", "b3", "c3", "d3", "e3"], correctAnswer: "d3")
+        var qa3 = QuestionAnswers(question: q3, answers: a3)
+        
+        var q4 = Question(question: "This is question 4 ?")
+        var a4 = Answer(options: ["a4", "b4", "c4", "d4", "e4"], correctAnswer: "b4")
+        var qa4 = QuestionAnswers(question: q4, answers: a4)
+        
+        var q5 = Question(question: "This is question 5 ?")
+        var a5 = Answer(options: ["a5", "b5", "c5", "d5", "e5"], correctAnswer: "b5")
+        var qa5 = QuestionAnswers(question: q5, answers: a5)
+        
+        
+        let config = SurveyConfig([qa1, qa2, qa3, qa4, qa5])
+        
+        return config
+    }
 }
 
